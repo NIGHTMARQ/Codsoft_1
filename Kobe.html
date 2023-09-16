@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>The Black Mamba</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Webflow" name="generator" />
+    <link type="icon" href="./log.jpeg">
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #fdba39;
+        /* Add background color to the whole page */
+      }
+
+      /* Header styles */
+      header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+
+      header h1 {
+        font-size: 36px;
+        color: #fdba39;
+      }
+
+      h1 {
+        color: black;
+        padding: 0 auto;
+      }
+
+      /* Main content styles */
+      main {
+        margin: 0 auto;
+      }
+
+      /* Main image styles */
+      .main-image img {
+        width: 100%;
+        height: auto;
+        /* Ensure the aspect ratio is maintained */
+        display: block;
+        margin: 0 auto;
+      }
+
+      /* Content styles */
+      .content {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .content p {
+        font-size: 18px;
+        color: #333;
+      }
+
+      /* Secondary image styles */
+      .secondary-image img {
+        max-width: 80%;
+        display: block;
+        margin: 0 auto;
+      }
+
+      /* Timeline styles */
+      .timeline {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      /* Timeline item styles */
+      .timeline-item {
+        display: flex;
+        margin-bottom: 40px;
+      }
+
+      .timeline-date {
+        width: 80px;
+        font-weight: bold;
+      }
+
+      .timeline-content {
+        margin-left: 20px;
+        padding: 10px;
+        border-left: 2px solid #333;
+      }
+
+      .timeline h2 {
+        font-size: 30px;
+        font-weight: 800;
+        margin: 0;
+        padding: 0;
+        color: blueviolet;
+        text-align: left;
+      }
+
+      .timeline p {
+        font-size: 16px;
+        color: #666;
+        margin: 5px 0;
+        text-align: justify;
+      }
+
+      h1.name:before {
+        content: "Black Mamba";
+        position: absolute;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      h1.name:hover:before {
+        opacity: 1;
+        color: blueviolet;
+        /* You can choose any color you like */
+      }
+
+      ::-webkit-scrollbar {
+        width: 12px;
+        /* Width of the scrollbar */
+      }
+
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(to bottom, #fdba39, blueviolet);
+        border-radius: 6px;
+        /* Rounded scrollbar handle */
+        transition: background 0.3s ease-in-out;
+        /* Transition for smooth color change */
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(to bottom, blueviolet, #fdba39);
+        transition: background 0.3s ease-in-out;
+      }
+    </style>
+    <script>
+      function changeText(element) {
+        element.textContent = "Black Mamba";
+      }
+
+      function resetText(element) {
+        element.textContent = "Kobe Bryant";
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1 class="name" onmouseover="changeText(this)" onmouseout="resetText(this)">Kobe Bryant</h1>
+    </header>
+    <main>
+      <section class="main-image">
+        <img src="./img.png" alt="Kobe Bryant - Main Image">
+      </section>
+      <section class="content">
+        <h1>Timeline</h1>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">1978</div>
+            <div class="timeline-content">
+              <h2>Birth of Kobe Bryant</h2>
+              <p>The son of NBA player Joe "Jellybean" Bryant, was born on August 23, 1978, in Philadelphia, Pennsylvania.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">1996</div>
+            <div class="timeline-content">
+              <h2>THE HIGH SCHOOL BASKETBALL KING HITS THE NBA</h2>
+              <p> Kobe Bryant spent his high school career in Philadelphia from 1991-1995, coming to the 1996 NBA draft fresh off a hot streak of four state championships with Lower Merion High School. He ended his high school days as Southeastern Pennsylvania's all-time leading scorer, with 2,883 points, surpassing even Wilt Chamberlain.Though he had also achieved good grades and high SAT-scores, he had numbers higher than 1600 on his mind. Bryant became one of just a handful of players at the time to jump straight from high school to the NBA draft. The Charlotte Hornets used their 13th overall pick on him, but ended up trading him to the L.A. Lakers, where he would spend the rest of his career. </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">1997</div>
+            <div class="timeline-content">
+              <h2>THE ROOKIE MISTAKE</h2>
+              <p>Kobe Bryant didn't start out as a dominant force, but he did soon become one. Los Angeles Daily News credits this to the infamous "airball game," a 1997 losing effort at the Western Conference semifinals. Bryant, an 18-year-old rookie, airballed no less than four free throws — entirely missing the rim and the backboard. The embarrassment made him focus and train extra hard to great effect, and today, many consider this single game to be a defining moment in his career.Despite the hiccups, Kobe was already looking promising, and would soon join the starting lineup, making him the youngest player to ever start an NBA game — a record that stands to this day. </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">1998-2000</div>
+            <div class="timeline-content">
+              <h2>THE RUN-UP TO HIS FIRST NBA TITLE WITH THE LAKERS</h2>
+              <p> Kobe was just 19 years and 170 days old in 1998 when he became the youngest ever player to feature in an All-Star Game. He played on the Western Conference team alongside Tim Duncan, Gary Payton, and fellow Laker Shaq, among others. Though the Western Conference would lose 135-114, Kobe would go on to make another 17 All-Star appearances. </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2001-2002</div>
+            <div class="timeline-content">
+              <h2>TWO MORE TITLES, FIRST ALL-STAR GAME MVP</h2>
+              <p> In 2001, the Lakers' championship train just kept running. He overcame Allen Iverson and the Philadelphia 76ers, winning four straight games after losing the first. </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2003</div>
+            <div class="timeline-content">
+              <h2>CHARGED WITH SEXUAL ASSAULT</h2>
+              <p> The year 2003 saw dark clouds gather over Kobe Bryant's name. The basketball superstar was charged with sexual assault of a 19-year-old front desk clerk at the Lodge & Spa at Cordillera in Edwards, Colorado. The woman said Bryant assaulted her in his hotel room, and the extremely high-profile case would take 14 months to resolve. With his wife Vanessa at his side, Bryant admitted to cheating on her, but insisted he was otherwise innocent. Nevertheless, the incident was a heavy blow to his reputation. </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2004</div>
+            <div class="timeline-content">
+              <h2>TIMES OF TURMOIL</h2>
+              <p> 2004 was a particularly turbulent year for Kobe Bryant. He played brilliantly and the Lakers made it to the finals, and he even locked in a cool seven-year contract with the team that was worth $136 million. However, he was often flying between his day job and dealing with his criminal court situation with the "Jane Doe" accusing him of sexual assault. Though she dropped the criminal suit, the woman did file a civil lawsuit against Bryant for an "unspecified amount of damages." </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2005</div>
+            <div class="timeline-content">
+              <h2>SETTLEMENTS AND DISAPPOINTMENTS</h2>
+              <p> 2005 brought an end to Kobe Bryant's legal nightmare, as he settled with his accuser. The terms of the settlement are unknown. His day job kept giving him grief, Bryant was essentially the most hated man in the NBA for the 2004-2005 season, because people felt he had driven Shaquille O'Neal out of the team (and because of the whole sexual assault case situation, obviously). It didn't help that while Bryant himself played fairly well, the Lakers failed to reach playoffs that year. </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2006</div>
+            <div class="timeline-content">
+              <h2>THE U-TURN</h2>
+              <p> Kobe Bryant had to enter the 2006 NBA season with a big ol' slice of humble pie in his hand. As Bleacher Report writes, his reputation was in tatters and he bore the brunt of the blame from the Lakers' recent failures. However, he ate it all without wincing, and went on to become the best Kobe Bryant he could possibly be. He played the absolute best season in his career, including a ridiculous 81-point game against the Toronto Raptors and a 62-point one against the Dallas Mavericks. He even managed to carry his otherwise underwhelming team back in the playoffs. There were other changes, too — he finally ended the longtime animosity with his rival, Shaquille O'Neal. </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2008</div>
+            <div class="timeline-content">
+              <h2>THE OLYMPIC GOLD MEDAL</h2>
+              <p> Kobe Bryant added massively to his resume in 2008, when BBC writes he won his first Olympic gold with the U.S. men's basketball team at the Beijing Summer Olympic Games. USA beat Spain in the finals, thanks to the "Mamba Mentality" that Bryant brought to the team as captain. </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2009-2010</div>
+            <div class="timeline-content">
+              <h2>THE ACCOLADES, THEY JUST KEEP COMING</h2>
+              <p> 2009 and 2010 were pretty good years even by Kobe Bryant standards, according to the OC Register. In 2009, Bryant took his fourth NBA title and was named the MVP of the finals, while also speeding past Jerry West's record of "points scored as a Laker" (25,192). 2010 brought a fifth NBA title and another Finals MVP plaudit, along with a three-year contract extension that was worth $84 million. Kobe would ultimately earn $680 million in salary and endorsements over his two decade career– the most ever for a team athlete during their playing career. </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2011</div>
+            <div class="timeline-content">
+              <h2>ANTI-GAY SLURS, VANESSA GOES FOR DIVORCE</h2>
+              <p> Despite putting up respectable numbers on the court, averaging 25.3 points per game and tying his career high for games started, the year 2011 was a pretty bad one for Kobe Bryant, according to the OC Register. He was in hot water with the NBA for slinging an "anti-gay slur" at a referee, and was eventually fined $100,000. Things were hardly better on the home front, either: Bryant's wife, Vanessa, decided to file for divorce.  </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2012</div>
+            <div class="timeline-content">
+              <h2>OLYMPIC SUCCESS AGAIN</h2>
+              <p> Even for someone as successful as Kobe, becoming a two-time Olympic champion held a special significance, and pushed Kobe further into the realm of international stardom. "It carries a great honor. It goes above and beyond winning an NBA championship," he said about winning his Olympic gold medals in a 2015 interview. </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2013</div>
+            <div class="timeline-content">
+              <h2>HAPPINESS, INJURIES AND TROUBLESOME MOTHERS</h2>
+              <p> Kobe Bryant managed to reconcile with his wife, Vanessa. Unfortunately, the other big Kobe news in 2013 were a mixed bag. Bryant had to file a lawsuit against his mother, Pamela, to prevent her from "auctioning off" all sorts of things from the early days of his career. He also ruptured his Achilles' tendon in a game — a potentially career-ending injury that required surgery and sidelined him for up to nine months. However, the Lakers were still happy to give the 35-year-old player a $48.5 million contract extension. </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2014</div>
+            <div class="timeline-content">
+              <h2>SURPASSES MICHAEL JORDAN</h2>
+              <p> on December 13, 2014, Kobe Bryant finally passed Michael Jordan and gained the third place on the NBA's all-time scoring list. The impending achievement had been the talk of the basketball town for quite some time, and caused publications like Time to openly wonder which of the two players is "the greatest of all time." </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2016</div>
+            <div class="timeline-content">
+              <h2>RETIREMENT AND NEW ADVENTURES</h2>
+              <p> Kobe Bryant retired from the hardwood, scoring 60 points in his farewell game as if to show basketball fans just why they loved him. But he didn't intend to rest on his laurels. </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2017</div>
+            <div class="timeline-content">
+              <h2>JERSEY NUMBERS RETIRED</h2>
+              <p> It was always a given that the Los Angeles Lakers would retire Kobe Bryant's number, but which one? As he played the first half of his career with a No. 8 jersey. Kobe had always worn jersey numbers 24 and 33 during his youth, but when he joined the Lakers, neither was an option. George McCloud wore No. 24 and No. 33 had been retired in recognition of Kareem Abdul-Jabbar. So he went with number 8, before switching to No. 24 before the 2006-2007 season. In 2017, the Lakers decided to just retire them both, and Bryant became the only man in NBA history to "have two numbers retired by the same team." </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2018</div>
+            <div class="timeline-content">
+              <h2>THE ACADEMY AWARD</h2>
+              <p> Bryant won his Academy Award for Dear Basketball, an animated short based around a poem he wrote to announce his retirement. Animator Glen Keane and famed composer John Williams helped Bryant to turn the poem into an animation, and the 2018 Academy Awards rewarded (or, rather, awarded) the project. The animated short film also won a Sports Emmy and an Annie Award. </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2019</div>
+            <div class="timeline-content">
+              <h2>A NEW CAREER</h2>
+              <p> In 2019, Bryant revealed his latest career move: He was now working on a young adult book series called The Wizenard Series. The first book, Training Camp, was written by Wesley King and created by Bryant, and it focuses on a ragtag basketball team called the West Bottom Badgers and their strange wizard trainer. Bryant would state that Phil Jackson served as an inspiration for the wizard trainer, as he would often burn incense, or make the Lakers practice Tai Chi. </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2020</div>
+            <div class="timeline-content">
+              <h2>BLACK MAMBA</h2>
+              <p> On January 26, 2020, Kobe Bryant and his daughter, Gigi, died in a helicopter crash in Calabasas, as TMZ tells us. All nine people onboard perished, and the world was left stunned. A man who began his career as an excellent athlete ended it as an icon and inspiration to millions the world over. On the court, his name became synonymous with success, to the point that people of all ages would yell "Kobe!" when their shot was on target. Off the court, he became a symbol of discipline and determination, and strove to lead others to a higher level. He began a second career as a storyteller, but his life itself was an epic tale bordering on myth. Though that life was tragically cut short, Kobe Bryant's legacy will live on. </p>
+            </div>
+          </div>
+      </section>
+      <section class="secondary-image">
+        <img src="./Kobe.jpg" alt="Kobe Bryant - Secondary Image">
+      </section>
+    </main>
+  </body>
+</html>
